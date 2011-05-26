@@ -1,22 +1,16 @@
 % LaTeX resume using res.cls
 \documentclass[10pt,line,margin]{res}
 \usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
-%\usepackage{newcent}   % uses new century schoolbook postscript font
 
 \begin{document}
 
 \name{Aaron J. Peschel}
 % \address used twice to have two lines of address
-\address{4245 Stanley Blvd Pleasanton, CA}
+\address{4245 Stanley Blvd, APT 6, Pleasanton, CA}
 \address{jobs@apeschel.fastmail.fm or (760)-791-7301}
 
 \begin{resume}
 \vfill
-\section{OBJECTIVE}
-    Seeking a full time entry-level developement position that will utilize my
-    training and background in Computer Science, Mathematics, and
-    Engineering - as well as my versatility and commitment to excellence.
-
 \section{EDUCATION}
     {\bf B.S., Computer Science and Engineering} \hfill December 2009 \\
     Parallel and Distributed Computing Track \\
@@ -27,9 +21,10 @@
     {\bf Associate Systems Engineer} \hfill September 2010 - Current \\
     Autonomy, Pleasanton, CA
     \begin{itemize} \itemsep -2pt
-    \item Maintains a large scale Linux network.
-    \item Uses deductive skills to fix problems with servers.
+    \item Initiated project to move existing scripts into Subversion repository.
+    \item Works with and maintains a large scale Linux network.
     \item Creates simple Python scripts to automate tasks.
+    \item Handles basic networking setup and debugging.
     \end{itemize}
 
     {\bf Math Tutor} \hfill November 2005 - June 2006 \\
@@ -39,22 +34,27 @@
     algebra to multi variable calculus.
     \end{itemize}
 
-    {\bf Vice President of Student Government}
-    \hfill  October 2005 - June 2006 \\
-    Imperial Valley College, Imperial, CA
+\section {OPEN SOURCE PROJECTS}
+
+    {\bf CHIP8 Interpreter}
     \begin{itemize} \itemsep -2pt
-    \item   Acted as the voice of students at school board meetings.
-    \item Managed school events with other student government
-    members.
+    \item Project uses C++ and SDL.
+    \item Small collaborative project.
+    \end{itemize}
+
+    {\bf Various Github Projects}
+    \begin{itemize} \itemsep -2pt
+    \item Various small personal projects related to learning new languages and tools.
+    \item https://github.com/apeschel
     \end{itemize}
 
 \section {PROJECTS}
+
     {\bf Optical Networking Senior Design Project} \hfill Fall 2008 to Spring 2009
     \begin{itemize} \itemsep -2pt
     \item Year long team project to create a simple wireless
     networking device from basic circuit elements.
     \item Programmed an embedded microprocessor in C.
-    \item Overcame several major setbacks to complete the project.
     \end{itemize}
 
     {\bf UNIX Shell} \hfill Spring 2008
@@ -67,24 +67,15 @@
 
     {\bf Basic OpenGL Implementation} \hfill Winter 2008
     \begin{itemize} \itemsep -2pt
-    \item Used C++ to implement portions of the OpenGL library
+    \item C++ and OpenGL project.
+    \item Implemented portions of the OpenGL library
     related to lighting, transforms, and perspective.
     \end{itemize}
 
 \section{TECHNICAL \\ SKILLS}
     {\bf Languages:} Proficient with Python, C, C++, and Java \\
-    {\bf Development:} IDEs (Eclipse, Visual Studio), GNU
-    Toolchain (GCC, GDB), \\ SCM Tools (RCS, CVS, SVN) \\
-    {\bf Operating Systems:} UNIX, Linux, Windows Vista/XP \\
-    {\bf MISC:} Text editors (Vim, Textpad), Moderate Understanding 
-    of Databases
-
-\section {RELEVANT \\ COURSEWORK}
-    Statistics and Probability for Engineers,
-    Distributed Systems, Parallel Computer Systems, Digital
-    Signal Processing Embedded Computing Systems, Programming
-    in Multitasking Operating Systems, Project in Operating
-    System Organization,
+    {\bf Development:} GNU Toolchain (GCC, GDB), \\ SCM Tools (Subversion, Git) \\
+    {\bf Operating Systems:} UNIX/Linux, Windows \\
 
 \end{resume}
 \end{document}
