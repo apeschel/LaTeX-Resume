@@ -1,75 +1,83 @@
 % LaTeX resume using res.cls
-\documentclass[10pt,line,margin]{res}
+\documentclass[10pt,line,margin,letterpaper]{res}
 \usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+\setlength{\topmargin}{-0.3in}  % Start text higher on the page 
+\setlength{\textheight}{9.8in}  % increase textheight to fit more on a page
+\setlength{\headsep}{0.2in}     % space between header and text
+\setlength{\headheight}{12pt}   % make room for header
+\usepackage{fancyhdr}  % use fancyhdr package to get 2-line header
 
 \begin{document}
 
 \name{\LARGE{Aaron J. Peschel}}
 % \address used twice to have two lines of address
 \address{4245 Stanley Blvd. Apt. 6, Pleasanton, CA}
-\address{jobs@apeschel.fastmail.fm or (760)-791-7301}
+\address{aaron.peschel@gmail.com or (760)-791-7301}
 
 \begin{resume}
-\section{EDUCATION}
+\pagestyle{empty}
+\section{Objective}
+An environment combining both Systems Administration and Software Development skills to develop backend software and powerful automation, troubleshoot intricate systems and application level problems, while working in a close-knit team that encourages and appreciates self-development and initiative.
+
+\section{Education}
     {\bf B.S., Computer Science and Engineering} \hfill December 2009 \\
     Parallel and Distributed Computing Track \\
     {\bf Minor in Management} \\
     University of California, Irvine, GPA: 3.655, \textit{cum laude}
 
-\section{EXPERIENCE}
+\section{Experience}
     {\bf Associate Systems Engineer for Optimost} \hfill June 2011 - Current\\
     Autonomy, Pleasanton, CA
     \begin{itemize} \itemsep -2pt
-    \item In charge for US support for Optimost CentOS network.
-    \item Acting in role of systems administrator for the production environment.
-    \item In charge of managing the hardware in the data center.
-    \item Currently working on setting up puppet configuration within the environment.
+    \item Head of US support for Optimost network which involves continuous deployment and daily operations of data center facility.
+    \item Primary systems engineer for production environment.
+    \item In charge of asset management and data center facilities.
+    \item Document systems and network using semi-automation (part custom scripts to collect data and part manually written documentation).
+    \item Ongoing projects include Puppet integration for improved efficiency in deployment and configuration of servers.
     \end{itemize}
 
     {\bf Associate Systems Engineer for Digital Safe} \hfill September 2010 - June 2011 \\
     Autonomy, Pleasanton, CA
     \begin{itemize} \itemsep -2pt
-    \item Performed support and repair within a large CentOS environment.
-    \item Created and edited scripts monitoring and automation in Python, Perl, and BASH.
-    \item Involved troubleshooting problems within a distributed system.
-    \item Deployed code to production environment.
-    \item Set up Firewall and Routing rules within one of the network environments.
-    \item Interacted with customer to troubleshoot problems on their end.
+    \item Performed daily maintenance operations within a large CentOS environment.
+    \item Created and maintain scripts for automation and extend monitoring by custom plugins, using Python, Perl, and shell scripts.
+    \item Troubleshot intriciate domain-specific problems within a distributed system.
+    \item Oversaw the deployment of code to production environment.
+    \item Performed limited network administration duties such as configure firewall and routing.
+    \item Acted as technical liasion working with customer to troubleshoot problems and ensure correct operation.
     \end{itemize}
 
-\section {OPEN SOURCE PROJECTS}
+\section {Open Source Projects}
 
     {\bf CHIP8 Interpreter}
     \begin{itemize} \itemsep -2pt
     \item Acts as a virtual CHIP8 device, able to read CHIP8 binary files.
-    \item Collaborative project with one other person.
+    \item Collaborative project with a former colleague.
     \end{itemize}
 
-    {\bf Math Parser}
+    {\bf Arithmetic Expression Parser}
     \begin{itemize} \itemsep -2pt
-    \item Parses infix math notation into prefix notation and attempts to simply.
+    \item Parses arithmetic expressions in infix notation and outputs the corresponding expression simplified in prefix notation.
     \end{itemize}
 
     {\bf Various Github Projects}
     \begin{itemize} \itemsep -2pt
     \item Various personal projects related to learning new languages and tools.
-    \item https://github.com/apeschel
+    \item http://github.com/apeschel
     \end{itemize}
 
-\section {SCHOOL PROJECTS}
+\section {Academic Projects}
 
     {\bf UNIX Shell} \hfill Spring 2008
     \begin{itemize} \itemsep -2pt
     \item Project in C utilizing Flex/Bison and the UNIX API.
     \item Supports syntax similar to the Bourne Shell.
-    \item Provides features such as multiple pipes, background processes, and input/output redirection.
+    \item Provides features such as multiple pipes, background processes, and IO redirection.
     \end{itemize}
 
-\section{TECHNICAL \\ PROFICIENCIES}
-    {\bf Languages:} Python, C, C++, and Java, Perl, BASH \\
+\section{Tools / Skills}
+    {\bf Languages:} Python, Perl, BASH, C, C++, Java. \\
     {\bf Platforms:} GNU Toolchain, Flex, Bison, GLib, SDL \\
-
-\section{TOOLS \\ USED}
     {\bf Databases:} MySQL, PostgreSQL, DB2 \\
     {\bf Linux Administration:}Puppet, Nagios, Cacti, PXE Boot \\
     {\bf Networking Tools:}IPTables, HAProxy, ipvsadm \\
