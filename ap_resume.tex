@@ -1,5 +1,5 @@
 % LaTeX resume using res.cls
-\documentclass[10pt,line,margin,letterpaper]{res}
+\documentclass[10pt,line,letterpaper]{res}
 \usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 \setlength{\topmargin}{-0.3in}  % Start text higher on the page 
 \setlength{\textheight}{9.8in}  % increase textheight to fit more on a page
@@ -12,79 +12,58 @@
 \name{\LARGE{Aaron J. Peschel}}
 % \address used twice to have two lines of address
 \address{968 Washington St Apt 4, San Francisco, CA}
-\address{4245 Stanley Blvd. Apt. 6, Pleasanton, CA}
 \address{aaron.peschel@gmail.com or (760)-791-7301}
 
 \begin{resume}
 \pagestyle{empty}
-\section {Open Source Projects}
-    {\bf CHIP8 Interpreter}
-    \begin{itemize} \itemsep -2pt
-    \item Acts as a virtual CHIP8 device, able to read CHIP8 binary files.
-    \item Collaborative project with a former colleague.
-    \item http://code.google.com/p/chip8interpreter
-    \end{itemize}
-
-    {\bf Arithmetic Expression Parser}
-    \begin{itemize} \itemsep -2pt
-    \item Parses arithmetic expressions in infix notation and outputs the corresponding expression simplified in prefix notation. Able to perform as a very basic computer algebra system.
-    \item https://github.com/apeschel/Math-Parser
-    \end{itemize}
-
-    {\bf Various Github Projects}
-    \begin{itemize} \itemsep -2pt
-    \item Various personal projects related to learning new languages and tools.
-    \item http://github.com/apeschel
-    \end{itemize}
-
-\section{Tools / Skills}
-    {\bf Languages:} Python, C, Bash, C++, Java \\
-    {\bf Platforms:} GNU Toolchain, Flex, Bison, GLib, SDL \\
-    {\bf Linux Administration:}Puppet, Nagios, Kick server \\
-    {\bf Networking Tools:}IPTables, HAProxy, Keepalive \\
-    {\bf Hard drive management:}NFS, LVM \\
-    {\bf Virtualization:} Xen, Virsh
-
 \section{Experience}
-    {\bf Development Operations Engineer} \hfill April 2012 - Current\\
+    {\bf Development Operations Engineer} \hfill April 2012 - June 2016 \\
     Zendesk, San Francisco, CA
     \begin{itemize} \itemsep -2pt
-    \item Responded to and and resolved production issues.
-    \item Planned and rolled out new services to production.
-    \item Set up an LDAP infrastructure for production environment.
+    \item Coordinated with security team to achieve PCI compliance in production environment.
+    \item Set up an LDAP infrastructure for production environment. Migrated all users, groups, and SUDOers rules.
+    \item Orchestrated deployment of new developer projects to production environment. This included planning the architecture for the project, planning basic networking, writing Chef cookbooks, and planning the overall project timeline.
+    \item Created a secure isolated environment for the professional services team using AWS, OpenVPN, and Openswan.
+    \item Worked with open source projects to merge bug fixes and features into the main code base, rather than running in-house forks.
+    \item Was responsible for 24/7 on-call shift coverage of production environment.
     \end{itemize}
     
     {\bf Associate Systems Engineer for Optimost} \hfill June 2011 - April 2012 \\
     Autonomy, Pleasanton, CA
     \begin{itemize} \itemsep -2pt
-    \item Head of US support for Optimost network which involves maintaining existing environments and deploying new environments.
-    \item Managed Puppet integration for improved efficiency in deployment and configuration of servers.
-    \item Improved efficiency of deployment process by finding and utilizing tools such as Cobbler, Koan, Xen, and Virsh.
+    \item Headed US support of Optimost network which involved maintaining existing environments and deploying new environments.
+    \item Wrote puppet manifests to manage the deployment and configuration of servers.
+    \item Researched and deployed tools like Cobbler, Koan, Xen, and Virsh to improve the efficiency of the Optimost environment.
     \end{itemize}
 
     {\bf Associate Systems Engineer for Digital Safe} \hfill September 2010 - June 2011 \\
     Autonomy, Pleasanton, CA
     \begin{itemize} \itemsep -2pt
-    \item Created and maintained scripts for automation and extend monitoring with custom plugins using Python, Perl, and shell scripts.
-    \item Troubleshot intriciate domain-specific problems within a distributed system.
-    \item Oversaw the deployment of code to production environment.
+    \item Created and maintained scripts for automation
+    \item Extended monitoring with custom plugins.
+    \item Performed troubleshooting on intricate domain-specific problems within a distributed system.
     \item Performed limited network administration duties such as firewall, load balancer, and routing configuration.
+    \item Oversaw the deployment of code to production environment.
     \end{itemize}
+
+\section {Open Source Project Contributions}
+    {\bf NGINX:} added weak ETag support \\
+    {\bf Cobbler:} various bug fixes \\
+    {\bf Siege:} added SNI support \\
+    {\bf Docker Compose API:} added support for V2 docker-compose configs
+
+\section{Strongest Tools / Skills}
+    {\bf Languages:} Python, Ruby, Bash, C \\
+    {\bf Orchestration:} Puppet, Chef \\
+    {\bf Administration:} Nagios, Datadog, systemd, Pagerduty, Git \\
+    {\bf Networking:} OpenLDAP, NGINX, IPTables, HAProxy, Keepalive \\
+    {\bf Virtualization:} Xen, AWS, Docker, LXC
 
 \section{Education}
     {\bf B.S., Computer Science and Engineering} \hfill December 2009 \\
     Parallel and Distributed Computing Track \\
     {\bf Minor in Management} \\
     University of California, Irvine, GPA: 3.655, \textit{cum laude}
-
-\section {Academic Projects}
-
-    {\bf UNIX Shell} \hfill Spring 2008
-    \begin{itemize} \itemsep -2pt
-    \item Project in C utilizing Flex/Bison and the UNIX API.
-    \item Supports syntax similar to the Bourne Shell.
-    \item Provides features such as multiple pipes, background processes, and IO redirection.
-    \end{itemize}
 
 \end{resume}
 \end{document}
