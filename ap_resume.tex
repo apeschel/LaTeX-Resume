@@ -1,5 +1,5 @@
 % LaTeX resume using res.cls
-\documentclass[10pt,line,letterpaper]{res}
+\documentclass[12pt,line,letterpaper]{res}
 \usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 \setlength{\topmargin}{-0.3in}  % Start text higher on the page 
 \setlength{\textheight}{9.8in}  % increase textheight to fit more on a page
@@ -17,6 +17,17 @@
 \begin{resume}
 \pagestyle{empty}
 \section{Experience}
+    {\bf Systems Engineer} \hfill September 2016 - Current \\
+    Element Analytics, San Francisco, CA
+    \begin{itemize} \itemsep -2pt
+    \item Prototyped Kubernetes and transitioned the application stack to run on Kubernetes.
+    \item Reworked Azure ARM deployment process to reduce application deploy time from over a day to a couple of hours.
+    \item Worked with vendors to find appropriate solutions for logging, metrics, and other platform services.
+    \item Encapsulated the application services in Helm charts for deployment.
+    \item Provided training and guidance for the development teams on the best practices for Docker, Kubernetes, and build pipelines.
+    \item Planning for quarter long projects, breaking them into smaller, sprint-sized stories.
+    \end{itemize}
+
     {\bf Development Operations Engineer} \hfill April 2012 - June 2016 \\
     Zendesk, San Francisco, CA
     \begin{itemize} \itemsep -2pt
@@ -27,23 +38,15 @@
     \item Worked with open source projects to merge bug fixes and features into the main code base, rather than running in-house forks.
     \item Was responsible for 24/7 on-call shift coverage of production environment.
     \end{itemize}
-    
-    {\bf Associate Systems Engineer for Optimost} \hfill June 2011 - April 2012 \\
+
+    {\bf Associate Systems Engineer} \hfill September 2010 - April 2012 \\
     Autonomy, Pleasanton, CA
     \begin{itemize} \itemsep -2pt
     \item Headed US support of Optimost network which involved maintaining existing environments and deploying new environments.
     \item Wrote puppet manifests to manage the deployment and configuration of servers.
     \item Researched and deployed tools like Cobbler, Koan, Xen, and Virsh to improve the efficiency of the Optimost environment.
-    \end{itemize}
-
-    {\bf Associate Systems Engineer for Digital Safe} \hfill September 2010 - June 2011 \\
-    Autonomy, Pleasanton, CA
-    \begin{itemize} \itemsep -2pt
-    \item Created and maintained scripts for automation
-    \item Extended monitoring with custom plugins.
     \item Performed troubleshooting on intricate domain-specific problems within a distributed system.
     \item Performed limited network administration duties such as firewall, load balancer, and routing configuration.
-    \item Oversaw the deployment of code to production environment.
     \end{itemize}
 
 \section {Open Source Project Contributions}
@@ -52,9 +55,9 @@
     {\bf Siege:} added SNI support \\
     {\bf Docker Compose API:} added support for V2 docker-compose configs
 
-\section{Strongest Tools / Skills}
+\section{Strongest Tools / Skills / Relevant Buzzword List}
     {\bf Languages:} Python, Ruby, Bash, C \\
-    {\bf Orchestration:} Puppet, Chef \\
+    {\bf Orchestration:} Puppet, Chef, Kubernetes \\
     {\bf Administration:} Nagios, Datadog, systemd, Pagerduty, Git \\
     {\bf Networking:} OpenLDAP, NGINX, IPTables, HAProxy, Keepalive \\
     {\bf Virtualization:} Xen, AWS, Docker, LXC
